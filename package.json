@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack -w",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "demo": "npm run build && git subtree push --prefix public origin gh-pages"
   },
   "author": "Kiko Ruiz Lloret",
   "license": "ISC",
