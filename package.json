@@ -7,7 +7,8 @@
     "build": "webpack",
     "watch": "webpack -w",
     "prepublish": "npm run build",
-    "demo": "npm run build && git subtree push --prefix public origin gh-pages"
+    "deploy": "gh-pages-deploy",
+    "clean": "rm -rf README.md LICENSE src package.json webpack.config.js"
   },
   "author": "Kiko Ruiz Lloret",
   "license": "ISC",
@@ -26,9 +27,15 @@
     "css-loader": "^0.23.1",
     "eslint": "^2.8.0",
     "eslint-plugin-react": "^5.0.1",
+    "gh-pages-deploy": "^0.4.2",
     "node-sass": "^3.6.0",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.0"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "public",
+    "prep": ["build"],
+    "post": ["clean"]
   }
 }
