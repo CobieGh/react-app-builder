@@ -1,2 +1,2 @@
-# react-app-builder
+# React App Builder
 A tool to build React web apps.
