@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import App from './app.jsx';
-import Preview from './preview.jsx';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import App from './App';
+import Preview from './Preview';
+import './styles/index.scss';
+
+injectTapEventPlugin();
 
 ReactDOM.render(
   (<Router history={hashHistory}>

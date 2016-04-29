@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/index.js',
   output: {
     filename: 'public/app.js'
   },
@@ -14,6 +14,9 @@ module.exports = {
           'es2015'
         ]
       }
+    }, {
+      test: /\.scss$/,
+      loaders: ['style', 'css', 'sass']
     }]
   }
 };
