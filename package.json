@@ -8,7 +8,7 @@
     "watch": "webpack -w",
     "prepublish": "npm run build",
     "deploy": "gh-pages-deploy",
-    "clean": "rm -rf README.md LICENSE src dist package.json webpack.config.js",
+    "clean": "rm -rf README.md LICENSE src .babelrc package.json server.js webpack.config.js",
     "start": "node server.js"
   },
   "author": "Kiko Ruiz Lloret",
@@ -39,7 +39,6 @@
     "webpack-dev-server": "^1.14.1"
   },
   "gh-pages-deploy": {
-    "staticpath": "dist",
     "prep": [
       "build"
     ],
