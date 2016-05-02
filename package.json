@@ -47,6 +47,7 @@
     "post": [
       "clean",
       "move"
-    ]
+    ],
+    "noprompt": true
   }
 }
