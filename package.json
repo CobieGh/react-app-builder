@@ -9,7 +9,7 @@
     "prepublish": "npm run build",
     "deploy": "gh-pages-deploy",
     "clean": "rm -rf README.md LICENSE src .babelrc package.json server.js webpack.config.js",
-    "move": "mv app.js dist",
+    "move": "mkdir dist && mv app.js dist",
     "start": "node server.js"
   },
   "author": "Kiko Ruiz Lloret",
