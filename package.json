@@ -9,7 +9,6 @@
     "prepublish": "npm run build",
     "deploy": "gh-pages-deploy",
     "clean": "rm -rf README.md LICENSE src .babelrc package.json server.js webpack.config.js",
-    "move": "mkdir dist && mv app.js dist",
     "start": "node server.js"
   },
   "author": "Kiko Ruiz Lloret",
@@ -40,13 +39,12 @@
     "webpack-dev-server": "^1.14.1"
   },
   "gh-pages-deploy": {
-    "staticpath": "dist",
+    "staticpath": "static",
     "prep": [
       "build"
     ],
     "post": [
-      "clean",
-      "move"
+      "clean"
     ],
     "noprompt": true
   }
