@@ -39,7 +39,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "gh-pages-deploy": {
-    "staticpath": "static",
+    "staticpath": "public",
     "prep": [
       "build"
     ],
