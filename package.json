@@ -40,6 +40,9 @@
   },
   "gh-pages-deploy": {
     "staticpath": "public",
+    "prep": [
+      "build"
+    ],
     "post": [
       "clean"
     ],
