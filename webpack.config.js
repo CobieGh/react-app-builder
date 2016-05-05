@@ -12,8 +12,8 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   output: {
-    path: path.join(__dirname, 'dist'),
-    publicPath: '/dist/',
+    path: path.join(__dirname, 'public'),
+    publicPath: '/',
     filename: 'app.js'
   },
   plugins: [

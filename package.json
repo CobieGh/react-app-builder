@@ -2,12 +2,11 @@
   "name": "react-app-builder",
   "version": "0.0.2",
   "description": "A tool to build React web apps.",
-  "main": "./dist/app.js",
+  "main": "./public/app.js",
   "scripts": {
     "build": "webpack",
     "watch": "webpack -w",
     "prepublish": "npm run build",
-    "predeploy": "npm run build && cp -r public/.gitignore .",
     "deploy": "gh-pages-deploy",
     "clean": "rm -rf README.md LICENSE src .babelrc package.json server.js webpack.config.js",
     "start": "node server.js"
@@ -41,8 +40,9 @@
   },
   "gh-pages-deploy": {
     "staticpath": "public",
-    "prep": ["predeploy"],
-    "post": ["clean"],
+    "post": [
+      "clean"
+    ],
     "noprompt": true
   }
 }
